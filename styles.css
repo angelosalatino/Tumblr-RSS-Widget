@@ -1,0 +1,83 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 1, 2014, 2:47:00 PM
+    Author     : angelosalatino
+*/
+#tumblr{
+    /*height: 600px; */
+    width: 520px; 
+    /*padding-left: 10px;*/
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: #8c8c8c;
+    /*color:#00ccff;*/
+}
+.title a{
+    margin-left: 10px;
+    font-weight: bold; 
+    color:#8c8c8c;
+    
+}
+.title a:link {text-decoration: none}
+.title a:visited {text-decoration: none}
+.title a:active {text-decoration: none}
+.title a:hover {text-decoration: underline;}
+.btn{
+    margin-left: -8px;
+    margin-top: 8px;
+}
+#description{
+    /*color:#005791;*/
+    text-align: justify;
+}
+.posts{
+    margin-left:10px;
+}
+.posts a{font-weight: bold; color:#0066cc;}
+.posts a:link {text-decoration: none}
+.posts a:visited {text-decoration: none}
+.posts a:active {text-decoration: none}
+.posts a:hover {text-decoration: underline;}
+.elempost{
+    padding:3px;
+    border:1px solid #e8e8e8;
+}
+#super{
+    height: 40px; 
+}
+#super_in_left{
+    display: block;
+    float: left;
+    width:403px;
+    color: #8c8c8c;
+    font-size: 18pt;
+    font-weight: bold;
+    margin-top: 6px;
+}
+#super_in_right{
+    float:right;
+    width:113px;
+}
+#inside{
+    height: 530px; 
+    /*width: 550px; */
+    border-top: 1px solid #e8e8e8;
+    overflow:auto;
+    border-bottom: 1px solid #e8e8e8;
+}
+#bottom{
+    height:46px;
+    /*width:550px;*/
+}
+#cssimg{
+    height: 32px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.clear { clear: both;}
+
