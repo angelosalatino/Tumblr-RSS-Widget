@@ -9,14 +9,14 @@ $RSSwebsite = $website . "/rss";
 /*
  * Acquiring some elements
  */
-$documento = new DOMDocument();
-$documento->load($RSSwebsite);
-$title = $documento->getElementsByTagName("title");
-$titolo = $title->item(0)->nodeValue;
-$description_temp = $documento->getElementsByTagName("description");
+$xmldocument = new DOMDocument();
+$xmldocument->load($RSSwebsite);
+$title = $xmldocument->getElementsByTagName("title");
+$blogTitle = $title->item(0)->nodeValue;
+$description_temp = $xmldocument->getElementsByTagName("description");
 $description = $description_temp->item(0)->nodeValue;
 $description = htmlallentities($description);
-$posts = $documento->getElementsByTagName("item");
+$posts = $xmldocument->getElementsByTagName("item");
 
 function htmlallentities($str) {
     $res = '';
@@ -40,7 +40,7 @@ function htmlallentities($str) {
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet"  type="text/css" href="styles.css">
+        <link rel="stylesheet"  type="text/css" href="tumblr-widget-style.css">
     </head>
     <body>
         <div id="tumblr">
@@ -49,9 +49,9 @@ function htmlallentities($str) {
              * Dynamic creation of divs in order to contain feeds
              */
             echo "<div id=\"super\">"
-            . "<div id=\"super_in_left\" class=\"title\"><a href=\"" . $website . "\" target=\"_blank\" alt=\"" . $description . "\" title=\"" . $description . "\">" . $titolo . "</a></div>"
+            . "<div id=\"super_in_left\" class=\"title\"><div id=\"super_in_left-content\"><a href=\"" . $website . "\" target=\"_blank\" alt=\"" . $description . "\" title=\"" . $description . "\">" . $blogTitle . "</a></div></div>"
             . "<div id=\"super_in_right\">"
-            . "<iframe class=\"btn\" frameborder=\"0\" border=\"0\" scrolling=\"no\" allowtransparency=\"true\" height=\"27\" width=\"113\" src=\"http://platform.tumblr.com/v1/follow_button.html?button_type=2&tumblelog=" . $blogname . "&color_scheme=light\"></iframe>"
+            . "<iframe class=\"btn\" frameborder=\"0\" border=\"0\" scrolling=\"no\" allowtransparency=\"true\" height=\"27\" width=\"114\" src=\"http://platform.tumblr.com/v1/follow_button.html?button_type=2&tumblelog=" . $blogname . "&color_scheme=light\"></iframe>"
             . "</div>"
             . "<div class\"clear\"></div>"
             . "</div>";

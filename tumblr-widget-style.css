@@ -7,20 +7,91 @@ and open the template in the editor.
     Created on : Jul 1, 2014, 2:47:00 PM
     Author     : angelosalatino
 */
+@media screen and (min-width: 244px) and (max-width: 519px){
+    #tumblr{
+        /*width: 220px; */
+    } 
+    #super{
+        height: 80px;
+    }
+    #inside{
+        height: 490px;
+    }
+    #super_in_left{
+        
+    }
+    #super_in_right{
+        width: 114px;
+        float: right;
+    }
+}
+
+@media screen and (min-width: 520px) {
+    #tumblr{
+        width: 520px; 
+    } 
+    #super{
+        height: 40px; 
+    }
+    #super_in_left{
+        width:403px;
+        float: left;
+    }
+    #super_in_right{
+        width:114px;
+        float:right;
+    }
+    #inside{
+        height: 530px; 
+    }
+}
+
+
 #tumblr{
     /*height: 600px; */
-    width: 520px; 
+    
     /*padding-left: 10px;*/
     border: 1px solid;
     border-radius: 5px;
     border-color: #8c8c8c;
     /*color:#00ccff;*/
+    
 }
+
+#super_in_left{   
+    height: 40px;
+    /*    position: relative;*/
+}
+
+#super_in_left-content{
+    
+    color: #8c8c8c;
+    font-size: 18pt;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 10px;
+    height: 30px;
+}
+
+#super_in_right{
+    height: 40px;
+}
+#inside{
+    border-top: 1px solid #e8e8e8;
+    overflow: auto;
+    border-bottom: 1px solid #e8e8e8;
+}
+#bottom{
+    height:46px;
+    /*width:550px;*/
+}
+
 .title a{
     margin-left: 10px;
     font-weight: bold; 
-    color:#8c8c8c;
-    
+    color:#8c8c8c; 
 }
 .title a:link {text-decoration: none}
 .title a:visited {text-decoration: none}
@@ -46,33 +117,7 @@ and open the template in the editor.
     padding:3px;
     border:1px solid #e8e8e8;
 }
-#super{
-    height: 40px; 
-}
-#super_in_left{
-    display: block;
-    float: left;
-    width:403px;
-    color: #8c8c8c;
-    font-size: 18pt;
-    font-weight: bold;
-    margin-top: 6px;
-}
-#super_in_right{
-    float:right;
-    width:113px;
-}
-#inside{
-    height: 530px; 
-    /*width: 550px; */
-    border-top: 1px solid #e8e8e8;
-    overflow:auto;
-    border-bottom: 1px solid #e8e8e8;
-}
-#bottom{
-    height:46px;
-    /*width:550px;*/
-}
+
 #cssimg{
     height: 32px;
     margin-top: 10px;
