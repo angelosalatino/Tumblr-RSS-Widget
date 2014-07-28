@@ -40,7 +40,7 @@ function htmlallentities($str) {
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet"  type="text/css" href="tumblr-widget-style.css">
+        <link rel="stylesheet"  type="text/css" href="css/tumblr-widget-style.css">
     </head>
     <body>
         <div id="tumblr">
